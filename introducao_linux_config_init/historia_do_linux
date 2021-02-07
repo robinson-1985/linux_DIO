@@ -1,0 +1,21 @@
+- Linux foi criado em 1991 por Linus Torvald;
+
+O linux é o kernel ou núcleo do Sistema Operacional;
+
+Temos o $ shell que é a linha de comando que acessam os programas;
+
+O kernel não é o sitema de operação, mas dá vida ao sistema operacional;
+
+É desenvolvido por diversas pessoas e empressas ao redor do mundo;
+
+Multitarefa/Multiusuário; 
+
+Distribuições: Pode ser distribuído por empresas, pessoas físicas ou organizações.
+A isso é dado o nome de distribuição, ou seja a distrô foi criada para determinado fim.
+Então existem distribuição Linux para segurança, forense, pessoas física etc.
+
+Distribuição mais conhecidas: Ubuntu, Debian, Suse, Fedora, Red hat e Kali.
+
+Ubuntu - é um sistema operacional aberto que é desenvolvido pela Canonical com base no kernel linux.
+
+
