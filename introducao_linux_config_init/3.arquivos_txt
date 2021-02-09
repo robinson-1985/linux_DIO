@@ -1,8 +1,13 @@
-Para trabalharmos com arquivos .txt podemos utilizar o programa no terminal chamado nano, que é um leitor básico de texto feito sob medida para as diversas distribuições Linux. Utiliza-se o comando nano alias.txt
+Para trabalharmos com arquivos .txt podemos utilizar o programa no terminal 
+chamado nano, que é um leitor básico de texto feito sob medida para as diversas 
+distribuições Linux. Utiliza-se o comando nano alias.txt
 
 Sempre quando tiver o sinal de ^ significa que é o Crtl.
 
-Abaixo do menu do nano você encontra todos os comandos, super simples e fácil de entender.
+Abaixo do menu do nano você encontra todos os comandos, super simples e fácil de 
+entender.
+
+Existem vários atalhos no nano, abaixo seguem alguns:
 
 Ctrl+ G - Ajuda
 
@@ -26,11 +31,47 @@ Crtl + C - Pos atual
 
 Crtl + \ - Substituir
 
-Para visualizar o arquivo no prorgama nano, não é necessário abri-lo novamente. É só utilizar o comando cat, como por exemplo: cat alias.txt.
+Para visualizar o arquivo no prorgama nano, não é necessário abri-lo novamente. 
+É só utilizar o comando cat, como por exemplo: cat alias.txt.
+
 O Linux é o Kernel do sistema operacional.
 O Ubuntu é uma distribuição Linux.
 
-O comando tac inverte as linhas do arquivo que está no nano, como por exemplo: tac teste.txt 
+O comando tac inverte as linhas do arquivo que está no nano, como por exemplo: 
+tac teste.txt 
+
 O Ubuntu é uma distribuição Linux.
 O Linux é o Kernel do sistema operacional.
+
+head alias.txt - apresentará as 10 primeiras linhas do arquivo de texto presente
+do nano que foi direcionado.
+
+Já o comando cat alias.txt apresentará todas as linhas do arquivo que vocẽ quer ver.
+
+Já o tail mostrará somente as 10 últimas linhas do arquivo. tail alias.txt
+
+Podemos utilizar programas de redirecionamento de arquivos, pelo comando 
+tail alias.txt > Alias.txt
+
+Podemos fazer isto com o head também, utilizando o comando
+head alias.txt > alias2.txt
+
+Temos o comando cal que abrirá o calendário atual.
+
+Podemos enviar esse calendário para um arquivo utilizando o comando
+cal > calendario_fev.txt
+Através do nano eu posso editar esse calendário pelo comando: nano calendario_fev.txt
+
+Pelo terminal podemos adicionar alguma coisa nos arquivos, pelo comando cat. 
+Aqui vamos exemplificar pelo calendário: cat calendario_fev.txt
+
+O comando date mostra a data atual. 
+
+Se quisermos adicionar essa informação do date no calendário, podemos pelo 
+comando date >> calendario_fev.txt. Depois pelo comando cat calendario_fev.txt 
+abrirá o calendário.
+
+Se colocarmos somente um sinal de > abrirá a informação do ano todo.
+
+
 
