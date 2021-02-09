@@ -16,3 +16,75 @@ Agora para listagem dos arquivos e diretórios dentro da pasta que está sendo m
 
 Para entrarmos em uma pasta utilizamos o comando "cd alias"
 
+Fazer uma pasta - mkdir alias.
+
+Para retornar uma pasta, o comando cd .. retorna um diretório anterior.
+
+Se desejamos sair do diretório pessoal para ir ao diretório raiz utilizamos 
+o comando cd /. Após, digite ls para ver os diretórios.
+
+Se digitarmos o comando ls -l veremos detalhes da criação dos arquivos, tamanho 
+do arquivo, grupo e usuários a qual ele pertence.
+
+Se entrarmos com o comando man ls, entrará na tela o Manual do Comando ls. 
+
+Se quisermos sair do manual é só apertar o q para sair do Manual.
+
+Para pedirmos ajuda com os comandos podemos digitar ls --help.
+
+Se quisermos voltar para o diretório pessoal é só utilizarmos co comando "cd".
+
+O comando history exibe toda a história do comando do terminal.
+
+Colocando a seta indicadora para cima veremos os comandos que já foram executados no
+terminal.
+
+Se colocarmos !! retornará no último comando que digitamos no terminal através desse 
+atalho.
+
+Atalhos do terminal: 
+
+Crtl + C - Cancela o comando atual em funcionamento;
+
+Crtl + Z - Pausa o comando atua, em primeiro plano ou segundo plano.
+
+Crtl + D Faz o logout da sessão atual.
+
+Crtl + W - Apaga uma palavra na linha atual.
+
+Crtl + U - Apaga a linha inteira.
+
+!! - Repete o último comando.
+
+exit - sai do terminal ou Crtl + D
+
+Para renomear pastas utiliza-se o comando: mv Alias Aliases (Ex: mv Teste Linux)
+
+Podemos também mover uma pasta de um local para outro. Exemplo se quisermos jogar 
+a pasta Linux e colocar em outro diretório fazemos assim mv Alias/ ~
+
+Podemos também fazer arquivos vazios utilizando o comando touch alias.txt.
+
+Para renomear um arquivo fazemos assim: mv alias.txt Alias.txt
+
+Podemos utilizar um comando chamado 'copy' que é abreviado como cp para copiar o 
+arquivo cp alias.txt /home/robinson
+
+Se quisermos mover um arquivo utilizamos o comando mv linux.txt /home/robinson/Alias
+Para achar esse arquivo é só colocar o caminho como por exemplo ls /home/robinson/Alias.
+
+Para acessar as pasta utiliza-se os comandos cd Alias (pode utilizar a tecla Tab para 
+auto-completar o nome da pasta).
+
+Se precisar limpar a tela temos o comando clear que é o Crtl + L.
+
+O comando rmdir serve para apagar diretórios: rmdir Alias (diretório)
+
+O comando rm serve para apagar arquivos: rm alias.txt
+
+Para sair do terminal é só digitar Crtl + D ou digitar exit
+
+
+
+
+
