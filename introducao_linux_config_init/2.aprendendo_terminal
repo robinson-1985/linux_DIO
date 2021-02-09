@@ -1,18 +1,22 @@
-O Terminal, Shell ou Konsole é uma linha de comando onde podemos executar programas específicos do Linux.
+O Terminal, Shell ou Konsole é uma linha de comando onde podemos executar
+programas específicos do Linux.
 
 A maioria dos comandos são iguais em diversas distribuições.
 
-Uso para automação d eprocesso através dos comandos, facilita o trabalho no Sistema para profissionais da Área.
+Uso para automação d eprocesso através dos comandos, facilita o trabalho no Sistema 
+para profissionais da Área.
 
 Pode ser aberto na maioria da vezes usando as teclas crtl + alt + T.
 
 A pasta pessoas é identificada pelo sinal ~
 
-A saída pwd traz do caminho local que estamos logados no terminal que é o /home/robinson.
+A saída pwd traz do caminho local que estamos logados no terminal que é 
+o /home/robinson.
 
 Para listarmos o que temos dentro da pasta utiliza-se o dir que mostra os diretórios.
 
-Agora para listagem dos arquivos e diretórios dentro da pasta que está sendo mostrada utiliza-se o "ls".
+Agora para listagem dos arquivos e diretórios dentro da pasta que está sendo mostrada
+utiliza-se o "ls".
 
 Para entrarmos em uma pasta utilizamos o comando "cd alias"
 
@@ -39,7 +43,7 @@ O comando history exibe toda a história do comando do terminal.
 Colocando a seta indicadora para cima veremos os comandos que já foram executados no
 terminal.
 
-Se colocarmos !! retornará no último comando que digitamos no terminal através desse 
+Se colocarmos !! retornará o último comando que digitamos no terminal através desse 
 atalho.
 
 Atalhos do terminal: 
@@ -82,7 +86,9 @@ O comando rmdir serve para apagar diretórios: rmdir Alias (diretório)
 
 O comando rm serve para apagar arquivos: rm alias.txt
 
-Para sair do terminal é só digitar Crtl + D ou digitar exit
+Para sair do terminal é só digitar Crtl + D ou digitar exit.
+
+
 
 
 

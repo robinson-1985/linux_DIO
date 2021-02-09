@@ -1,0 +1,36 @@
+Para trabalharmos com arquivos .txt podemos utilizar o programa no terminal chamado nano, que é um leitor básico de texto feito sob medida para as diversas distribuições Linux. Utiliza-se o comando nano alias.txt
+
+Sempre quando tiver o sinal de ^ significa que é o Crtl.
+
+Abaixo do menu do nano você encontra todos os comandos, super simples e fácil de entender.
+
+Ctrl+ G - Ajuda
+
+Ctrl+ O - Gravar
+
+Crtl + X - sair 
+
+Ctrl + U - Colar no texto
+
+Crtl + K - Recortar o texto
+
+Crtl + T - Verificar ortografia
+
+Crtl + W - Onde está?
+
+Crtl + R - Ler o arquivo
+
+Crtl + J - Justificar
+
+Crtl + C - Pos atual
+
+Crtl + \ - Substituir
+
+Para visualizar o arquivo no prorgama nano, não é necessário abri-lo novamente. É só utilizar o comando cat, como por exemplo: cat alias.txt.
+O Linux é o Kernel do sistema operacional.
+O Ubuntu é uma distribuição Linux.
+
+O comando tac inverte as linhas do arquivo que está no nano, como por exemplo: tac teste.txt 
+O Ubuntu é uma distribuição Linux.
+O Linux é o Kernel do sistema operacional.
+
