@@ -75,15 +75,19 @@ Se colocarmos somente um sinal de > abrirá a informação do ano todo.
 
 Para podermos acessar o calendário anual digite o comando: cal + o ano que quer.
 
-Se eu quiser substituir a informação do calendário txt, então é só fazer assim: cal 2021 > calemdario_fev.txt
+Se eu quiser substituir a informação do calendário txt, então é só fazer assim: 
+cal 2021 > calemdario_fev.txt
 
-Se eu quiser renomear esse arquivo, então faz assim mv calendario_fev.txt calendario_2021.txt
+Se eu quiser renomear esse arquivo, então faz assim:
+mv calendario_fev.txt calendario_2021.txt
 
 Para aparecer um mês qualquer o comando é: cat alias.txt
 
-Agora, se quisermos adicionar um novo mês ao anterior, o comando fica assim: cal julho 2021 >> maio.txt
+Agora, se quisermos adicionar um novo mês ao anterior, o comando fica assim: 
+cal julho 2021 >> maio.txt
 
-Se quisermos fazer uma saída utiliza o sinal >, porém, se quisermos adicionar algo o comando será >>
+Se quisermos fazer uma saída utiliza o sinal >, porém, se quisermos adicionar 
+algo o comando será >>
 
 Temos também o comando de direcionamento que é o pipe (|).
 
@@ -96,7 +100,7 @@ Pegando um arquivo e utilizando o comando cat alias.txt >> Alias.txt
 Depois digite outro arquivo utilizando o comando cat alias2.txt >> alias.txt 
 
 Mesclando varios arquivos e colocando somente em um, teremos um arquivo immenso
-que pode ser viasualizado através do comando cat alias.txt
+que pode ser visualizado através do comando cat alias.txt
 
 Para ler melhor e fazer a paginação podemos utilizar um cat alias.txt | more.
 Ou digitarmos cat alias.txt | less - porém esse comando não aparece o sinal de +.
@@ -105,17 +109,23 @@ o comando Ctrl + Z faz parar o teste acima.
 
 Temos também os operadores & e &&. Qual a diferença?
 
-Se utilizarmos o & podemos fazer cat alias.txt & cat calendario_2021.txt e pressionarmos enter que mostra para nós a saída (output) do comando.
+Se utilizarmos o & podemos fazer cat alias.txt & cat calendario_2021.txt e 
+pressionarmos enter que mostra para nós a saída (output) do comando.
 
-Já com && ele executa o comando de forma consecutiva. Ex: cat maio.txt && calendario_2021.txt e veremos uma saída sem pausa.
+Já com && ele executa o comando de forma consecutiva. 
+Ex: cat maio.txt && calendario_2021.txt e veremos uma saída sem pausa.
 
-Para criar uma pasta também podemos utilizar o && para abrir essa pasta. Ex: mkdir linux_ubuntu && cd linux_ubuntu 
+Para criar uma pasta também podemos utilizar o && para abrir essa pasta. 
+Ex: mkdir linux_ubuntu && cd linux_ubuntu 
 
 O comando file traz qual é o tipo de arquivo. Exemplo: file alias.txt 
 
-O comando whatis traz o que faz determinado comando, por exemplo o comando file. Exemplo: whatis file.
+O comando whatis traz o que faz determinado comando, por exemplo o comando 
+file. Exemplo: whatis file.
 
-Se eu quiser buscar meu diretório pessoal pelo nome, por exemplo: find ~ -name alias.txt 
+Se eu quiser buscar meu diretório pessoal pelo nome, por exemplo: 
+find ~ -name alias.txt 
+
 
 
 
