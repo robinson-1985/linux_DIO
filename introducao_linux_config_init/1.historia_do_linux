@@ -2,7 +2,7 @@
 
 O linux é o kernel ou núcleo do Sistema Operacional;
 
-Temos o $ shell que é a linha de comando que acessam os programas;
+Temos o $ shell que é a linha de comando que acessa os programas;
 
 O kernel não é o sitema de operação, mas dá vida ao sistema operacional;
 
@@ -16,6 +16,7 @@ Então existem distribuição Linux para segurança, forense, pessoas física et
 
 Distribuição mais conhecidas: Ubuntu, Debian, Suse, Fedora, Red hat e Kali.
 
-Ubuntu - é um sistema operacional aberto que é desenvolvido pela Canonical com base no kernel linux.
+Ubuntu - é um sistema operacional aberto que é desenvolvido pela Canonical com base no 
+kernel linux.
 
 
