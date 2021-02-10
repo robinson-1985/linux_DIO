@@ -16,17 +16,21 @@
 
 /mnt/ - diretório de montagem de dispositivos - mesmo que "media".
 
-/opt/ - instalação de programas não oficiais da distribuição ou por conta do usuário.
+/opt/ - instalação de programas não oficiais da distribuição ou por conta do 
+usuário.
 
-/sbin/ - armazena arquivos executáveis que representam comandos administrativos. Exemplo: shutdown.
+/sbin/ - armazena arquivos executáveis que representam comandos administrativos. 
+Exemplo: shutdown.
 
 /srv/ - diretório para dados de serviços fornecidos pelo sistema.
 
 /tmp/ - diretório para arquivos temporários.
 
-/usr/ - segunda hierarquia do sistema, onde ficam os usuários comuns do sistema e programas.
+/usr/ - segunda hierarquia do sistema, onde ficam os usuários comuns do sistema 
+e programas.
 
-/var/ - diretório com arquivos variáveis gerados pelos programas do sistema. Exemplo: impressora, e-mail e cachê.
+/var/ - diretório com arquivos variáveis gerados pelos programas do sistema. 
+Exemplo: impressora, e-mail e cachê.
 
 /root/ - diretório do usuário root - O usuário root tem o total poder sobre o sistema. 
 
@@ -40,16 +44,23 @@ cat /proc/cpuinfo - para ver as informações sobre a cpu.
 
 cat /proc/cpuinfo | more - veremos as informações do processador.
 
-cat /proc/meminfo | more - esse comando traz toda a informação da memória. Memória ativa, inativa, cache, etc.
+cat /proc/meminfo | more - esse comando traz toda a informação da memória. 
+Memória ativa, inativa, cache, etc.
 
-Se quisermos vermos mais informações sobr o nosso hardware, existem comandos para esse processo. 
-comando: lspci - todos os hardwares conectados via pci (placa de rede, placa de som, entre outros)
-comando:  lsusb | more - mostra o mouse, entre outros dispositivos usb.
-comando: arch - é a arquitetura do kernel. Mostra a arquitetura do kernel. Mostra
+Se quisermos vermos mais informações sobr o nosso hardware, existem comandos para 
+esse processo. 
+comando: lspci - todos os hardwares conectados via pci (placa de rede, placa de som, 
+entre outros)
+comando: lsusb | more - mostra o mouse, entre outros dispositivos usb.
+comando: arch - é a arquitetura do kernel. Mostra a arquitetura do kernel. 
 comando: uname -r - para verificar o nome da arquitetura do kernel. 
 comando: uname -m - traz também a arquitetura do kernel. 
 comando: free - mostra a saída física e swap que é a memória virtual do sistema. 
 comando: du -h ~ para saber o quanto o diretório pessoal utiliza do meu hd.
+O comando acima é human redeable, ou seja, feito para que o humano compreenda.
+
+
+
 
 
 
