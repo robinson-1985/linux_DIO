@@ -1,0 +1,31 @@
+1. Diretórios do Linux:
+
+/bin/ - Binários principais dos usuários.
+
+/boot/ - arquivos do sistema de Boot.
+
+/dev/ - arquivos de dispositivos.
+
+/etc/ - arquivos de configuração de sistema.
+
+/home/ - diretório dos usuaŕios comuns do sistema.
+
+/lib/ - Bibliotecas essenciais do sistema e os módulos do kernel.
+
+/media/ - diretório de montagem e dispositivos.
+
+/mnt/ - diretório de montagem de dispositivos - mesmo que "media".
+
+/opt/ - instalação de programas não oficiais da distribuição ou por conta do usuário.
+
+/sbin/ - armazena arquivos executáveis que representam comandos administrativos. Exemplo: shutdown.
+
+/srv/ - diretório para dados de serviços fornecidos pelo sistema.
+
+/tmp/ - diretório para arquivos temporários.
+
+/usr/ - segunda hierarquia do sistema, onde ficam os usuários comuns do sistema e programas.
+
+/var/ - diretório com arquivos variáveis gerados pelos programas do sistema. Exemplo: impressora, e-mail e cachê.
+
+/root/ - diretório do usuário root - O usuário root tem o total poder sobre o sistema. Podendo 
