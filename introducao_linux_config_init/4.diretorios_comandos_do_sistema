@@ -59,10 +59,18 @@ comando: free - mostra a saída física e swap que é a memória virtual do sist
 comando: du -h ~ para saber o quanto o diretório pessoal utiliza do meu hd.
 O comando acima é human redeable, ou seja, feito para que o humano compreenda.
 
+- Praticando no terminal os comandos de diretórios e sistema - Parte 2
 
-
-
-
+comando: cat /etc/passwd - mostra todos os usuários do sistema.
+comando: reboot - ele irá reiniciar o sistema. 
+comando: shutdown -h + tempo para ligar ou desligar - esse comando executa o tempo que irá necesitar de ligar ou reiniciar.
+comando: shutdown --help - mostra os comandos.
+comando: shutdown -h now - para desligar agora.
+comando: lscpu | more - mostra todos as informações sobre cpu. Esse comando é mais fácil de entender
+comando: lshw | more - gera uma lista imensa de todos os hardwares que forem achados.
+comando: lshw -short - mostra alguns caminhos de hardware, dispositivos, classe e disposição.
+comando: echo "Alias" - aparece o texto em aspas duplas. Exemplo: Alias.
+comando: echo -e "Bruno\n" que sairá assim: Bruno (pula linha abaixo).
 
 
 

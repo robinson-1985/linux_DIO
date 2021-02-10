@@ -1,0 +1,84 @@
+- O que são Redes, Protocolos e Interfaces de rede.
+
+O que é Rede?
+
+Rede de computadores é um conjunto de equipamentos interligados de maneira a 
+trocarem informações e compartilharem recursos, como arquivos de dados gravados, 
+impressoras, modems, software e outros equipamentos. (Sousa, 1999)
+
+Existem vários nós que é o computador, modem, etc.
+
+Rede WAN
+
+Wide Area Network ou World Area Network é um arede geograficamente distribuída 
+(liga um continente a outro).
+
+Rede MAN
+
+Metropolitan Area Network é uma rede menor que interligam várias redes locais
+(Cidade com cidade, entre outros).
+
+Rede Lan
+
+Local Area Network é uma rede local de uma forma geral em um único prédio ou campus 
+(rede local).
+
+Protocolos
+
+Protocolo é a linguagem usada pelos dispositivos de uma rede de modo que eles consigam 
+se comunicarem (Torres, 2004). Existem vários protocolos. 
+
+IP - Protocolo de Internet - Endereços IP - números que identificam o seu computador em
+uma rede.
+
+ICMP - (Internet Control Message Protocol) - tem por objetivo prover mensagens de 
+controle na comunicação entre nós.
+
+DNS - Domain Name Server - esse protocolo de aplicação tem por função identificar 
+endereços IP e manter uma tabela com os endereços dos caminhos de algumas redes.
+
+Interface de Rede
+
+Interface de rede é um software e/ou hardware que faz a comunicação em uma rede de 
+computadores.
+
+As interfaces de rede no Linux estão localizadas no diretório /dev e a maioria é 
+criada dianamicamente pelos softwares quando são requisitadas.
+
+Exemplo: eth0 - Placa de rede Ethernet - cabeada.
+
+A interface loopback é um tipo essencial de interface que permite fazer conexões 
+com você, com ela, você pode testar vários programas de redes sem interferir em 
+sua rede padrão, o endereço IP 127.0.0.1. foi escolhido para loopback.
+
+comando: ifconfig - exibe a interface de rede;
+
+- Comando Hostname e ping.
+
+comando: hostname - tem as informações do host do nosso computador, ou seja, o 
+nome do computador na rede;
+comando: hostname -I - se desejarmos saber o nome do endereço do computador na rede;
+comando hostname -i - esse é o comando para saber o endereço do loopback;
+comando: who - traz como estamos logados na rede;
+comando: whoami - mostra o nome do usuário que está logado na rede;
+comando: ping - envia mensagem de controle para determinado host verificando se está
+ativo ou inativo;
+Exemplo: ping www.alias.com
+comando: ping www.alias.com -w 4 - ele vai enviar 4 pacotes de ping será transmitidos,
+recebidos e sem perda. Ou seja, o host estará ativo.
+
+comando: dig - mostra as informações sobre o DNS. O DNS é o serviço de nomes e domínios;
+Ex: dig www.google.com 
+
+- Comando traceroute e finger.
+
+comando: traceroute - para traçar a rota do nosso host até um endereço qualquer;
+Ex: traceroute www.google.com 
+
+comando: dig www.alias.com  +short - ele traz o IP do endereço; 
+comando: whois - para saber sobre determinado host;
+Ex: whois www.alias.com
+
+comando: finger - mostra todas as informações do usuário que está logado no host;
+
+
