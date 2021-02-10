@@ -28,4 +28,30 @@
 
 /var/ - diretório com arquivos variáveis gerados pelos programas do sistema. Exemplo: impressora, e-mail e cachê.
 
-/root/ - diretório do usuário root - O usuário root tem o total poder sobre o sistema. Podendo 
+/root/ - diretório do usuário root - O usuário root tem o total poder sobre o sistema. 
+
+- Praticando no terminal os comandos de diretórios e sistema - Parte 1
+
+Para entrar nos diretórios é só entrar n terminal e digitar cd /
+
+Vai aparecer as diversas pastas do diretório. 
+
+cat /proc/cpuinfo - para ver as informações sobre a cpu.
+
+cat /proc/cpuinfo | more - veremos as informações do processador.
+
+cat /proc/meminfo | more - esse comando traz toda a informação da memória. Memória ativa, inativa, cache, etc.
+
+Se quisermos vermos mais informações sobr o nosso hardware, existem comandos para esse processo. 
+comando: lspci - todos os hardwares conectados via pci (placa de rede, placa de som, entre outros)
+comando:  lsusb | more - mostra o mouse, entre outros dispositivos usb.
+comando: arch - é a arquitetura do kernel. Mostra a arquitetura do kernel. Mostra
+comando: uname -r - para verificar o nome da arquitetura do kernel. 
+comando: uname -m - traz também a arquitetura do kernel. 
+comando: free - mostra a saída física e swap que é a memória virtual do sistema. 
+comando: du -h ~ para saber o quanto o diretório pessoal utiliza do meu hd.
+
+
+
+
+
