@@ -2,36 +2,124 @@
 
 aumento de letras - vá em preferẽncias no terminal e clica em  perfil;
 
-history -c - limpa o histórico do terminal; 
+ ls -a ou ls -la - exibe os diretórios (zual) e arquivos(brancos) ocultos sempre 
+aparecem com o . na frente;
 
-alias hh='history' - depois é só digitar hh que será igual a 'history', assim 
-pode fazer também com diversas palavras.
-Exemplo: alias trc='traceroute' == trc www.google.com
+ls -F - exibe os diretórios / no livro;
 
 nl (numbers of line) - conta a quantidade de linhas do arquivo;
 Ex: nl aularedes.txt
 
+wc -w + nome do arquivo - conta o número de palavras;
+
 wc -l + nome do arquivo - conta o número de linhas, mas conta também as linhas 
 em branco.
 
-wc -w + nome do arquivo - conta o número de palavras;
+wc -c - exibe exibe o número de bytes de um arquivo; 
 
 wc -m + nome do arquivo - conta o número de caracteres;
 
 wc --help - verifica os diversos comando do wc;
 
-ls -a ou ls -la - exibe os diretórios (zual) e arquivos(brancos) ocultos sempre 
-aparecem com o . na frente;
+sort - organiza a saída do arquivo em ordem alafabética
 
-ls -F - exibe a / barra em todos os arquivos;
+sort -n + nome do arquivo- organiza a saída do arquivo em ordem numérica;
 
-cmp - faz comparações entre arquivos;
+time - Exibe o tempo de processamento de um comando para o sistema, para o 
+usuário real;
+Exemplo: time traceroute www.google.com
+
+uptime - Exibe informações de carregamento do sistema;
+
+cmp - Compara dois arquivos;
 Ex. cmp alias.txt Alias.txt
 
 diff - gera diferenças entre arquivos de textos;
 Ex. diff alias.txt Alias.txt
 
-sort -n + nome do arquivo- organiza a saída do arquivo em ordem numérica;
+seq 1 10 (exemplo) - Imprime uma sequência de números com inicio e fim;
+
+seq 1 10 (exemplo) > nomearquivo.txt - coloco a sequência denttro de um arquivo; Após
+dê um cat nomearquivo.txt e verificará que a sequência estará dentro do arquivo!
+
+route -n - mostra todas as tabelas de roteamento IP do Kernel;
+
+alias - permite trocar o nome de um comando; Exemplos: 
+Exemplo1: hh='history' - depois é só digitar hh que será igual a 'history', assim 
+pode fazer também com diversas palavras. 
+Exemplo2: alias trc='traceroute' == trc www.google.com
+
+last reboot - mostra a reinicilização do sistema;
+
+history -c - limpa o histórico de comandos do terminal;
+
+init 0 - desliga a máquina imediatamente;
+
+telinit 0 - também desliga a máquina imediatamente; 
+ 
+halt  - pede uma identificação para desliga a máquina;
+
+whereis - Exibe o caminho do programa e seu manual;
+
+which - Exibe o caminho de um programa;
+
+logout - Finaliza a sessão;
+
+cowsay - exibe uma vaquinha com uma mensagem. Exemplo: cowsay "Linux é bom";
+
+cowsay -d "Linux" - aparece a vaquinha "esquisita";
+
+cowsay -g "Linux" - aparece a vaquinha querendo dinheiro (kkkkkkk...);
+
+cowsay -f "Linux" - aparece o mascote do linux (pinguim);
+
+cowsay -f vader "Linux" - aparece a vaquinha vestida de vader;
+
+cowsay -f vader-koala "Linux" - aparece uma mistura de darth vader com Koala;
+
+cowsay -f dragon "Linux" - exibirá um dragão;
+
+xcowsay "Linux" - exibe uma vaquinha em 3 d;
+
+ATENÇÂO!!!!!!!!
+
+- Comandos para desligar o sistema operacional  e máquina:
+
+init 0 - desliga a máquina imediatamente;
+
+telinit 0 - também desliga a máquina imediatamente; 
+ 
+halt  - pede uma identificação para desliga a máquina;
+
+logout - Finaliza a sessão;
+
+Revisão: 
+
+Utilizaremos na revisão o link https://bellard.org/jslinux/
+
+Trabalhando com VI (editor de texto)
+
+Aperte i para entrar no modo de inserção.
+
+Para sair aperte esc, : wq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

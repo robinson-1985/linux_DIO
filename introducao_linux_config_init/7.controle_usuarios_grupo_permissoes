@@ -1,0 +1,43 @@
+- Comandos de como adicionar usuários
+
+Vamos trabalhar com esse site abaixo:
+
+https://bellard.org/jslinux
+
+Entrar no fedora virtual, porque aprenderemos alguns comandos.
+
+Em primeiro lugar entramos no usuário root
+
+Iremos adicionar novos usuários 
+
+comando adduser dio
+
+Isso só pode ser feito com privilégio, no caso utilizando o comando sudo
+
+sudo adduser dio
+
+coloque uma nova senha para o usuário 
+
+Adicionar as informações mais relevantes, colocar sim e novo usuário estará criado.
+
+- Como trocar de usuário e alterar sua senha
+
+Trocar de usuário: 
+
+comando su <nomedousuario>
+
+Já vai entrar na pasta nova
+
+- Como alterar a senha do usuário:
+
+comando: passwd <nomedousuario>
+
+Altere a senha e pronto já terá uma nova senha. 
+
+- Como exibir informações de login e remover um usuário
+
+
+
+
+
+
