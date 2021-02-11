@@ -1,0 +1,48 @@
+- Instalação, atualização e remoção de pacotes.
+
+                    PACOTES
+
+Pacotes sã programas colocadis denteo de um arquivo identificados por sua extensão, e 
+incluem arquivos necessários para a instalação de programa.
+Existem pacotes coma extensão .deb, .rpm e outros.
+
+                    GERENCIADORES
+
+Gerenciadores de pacotes são sistemas que possume resolução automática de dependencias
+entre pacotes, método fácil de instalação de pacotes.
+
+Exemplos: dpkg, apt e yum.
+
+                    Instalação
+
+apt - sudo apt install pacote;
+
+para instalar as atualizações do pacote - sudo apt upgrade install pacote;
+
+                    REMOÇÃO
+
+apt - sudo apt remove pacote;
+
+                ATUALIZAÇÃO DO SISTEMA
+
+apt - sudo apt update && apt upgrade
+
+dpkg - instalar pacote do tipo debian.
+comando: sudo dpkg -i
+
+                    DESCRIÇÃO DO PACOTE 
+
+dpkg
+
+Uso: sudo dpkg -I pacote.deb
+
+                    REMOÇÃO DO PACOTE DEB 
+
+dpkg
+
+Uso: sudo dpkg -r nomedopacote
+
+                    INTRODUÇÃO AO FEDORA 
+
+- Comandos rpm e yum.
+
