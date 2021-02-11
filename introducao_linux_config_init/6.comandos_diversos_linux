@@ -1,0 +1,42 @@
+- Comandos history, alias e outras interações com arquivos .txt
+
+aumento de letras - vá em preferẽncias no terminal e clica em  perfil;
+
+history -c - limpa o histórico do terminal; 
+
+alias hh='history' - depois é só digitar hh que será igual a 'history', assim 
+pode fazer também com diversas palavras.
+Exemplo: alias trc='traceroute' == trc www.google.com
+
+nl (numbers of line) - conta a quantidade de linhas do arquivo;
+Ex: nl aularedes.txt
+
+wc -l + nome do arquivo - conta o número de linhas, mas conta também as linhas 
+em branco.
+
+wc -w + nome do arquivo - conta o número de palavras;
+
+wc -m + nome do arquivo - conta o número de caracteres;
+
+wc --help - verifica os diversos comando do wc;
+
+ls -a ou ls -la - exibe os diretórios (zual) e arquivos(brancos) ocultos sempre 
+aparecem com o . na frente;
+
+ls -F - exibe a / barra em todos os arquivos;
+
+cmp - faz comparações entre arquivos;
+Ex. cmp alias.txt Alias.txt
+
+diff - gera diferenças entre arquivos de textos;
+Ex. diff alias.txt Alias.txt
+
+sort -n + nome do arquivo- organiza a saída do arquivo em ordem numérica;
+
+
+
+
+
+
+
+

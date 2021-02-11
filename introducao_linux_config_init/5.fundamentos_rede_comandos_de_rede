@@ -51,34 +51,35 @@ A interface loopback é um tipo essencial de interface que permite fazer conexõ
 com você, com ela, você pode testar vários programas de redes sem interferir em 
 sua rede padrão, o endereço IP 127.0.0.1. foi escolhido para loopback.
 
-comando: ifconfig - exibe a interface de rede;
+comando: ifconfig - exibe informações sobre a interface de rede e endereço IP;
 
 - Comando Hostname e ping.
 
-comando: hostname - tem as informações do host do nosso computador, ou seja, o 
-nome do computador na rede;
-comando: hostname -I - se desejarmos saber o nome do endereço do computador na rede;
-comando hostname -i - esse é o comando para saber o endereço do loopback;
-comando: who - traz como estamos logados na rede;
-comando: whoami - mostra o nome do usuário que está logado na rede;
+comando: hostname - exibe informações sobre o host;
+comando: hostname -I - exibe o endereço de IP na rede;
+comando hostname -i - Exibe o número de endereço loopback do host;
+comando: w - Exibe informações detalhadas sobre o usuário do computador na rede;
+comando: who - Exibe informações detalhadas sobre o usuário do computador na rede; 
+comando: whoami - Exibe o nome do usuário do computador na rede;
 comando: ping - envia mensagem de controle para determinado host verificando se está
 ativo ou inativo;
 Exemplo: ping www.alias.com
 comando: ping www.alias.com -w 4 - ele vai enviar 4 pacotes de ping será transmitidos,
 recebidos e sem perda. Ou seja, o host estará ativo.
+comando: dig host - Exibe informações sobre o DNS de um host;
 
 comando: dig - mostra as informações sobre o DNS. O DNS é o serviço de nomes e domínios;
 Ex: dig www.google.com 
 
 - Comando traceroute e finger.
 
-comando: traceroute - para traçar a rota do nosso host até um endereço qualquer;
+comando: traceroute - Exibe informações sobre a rota da sua rede até o host desejado;
 Ex: traceroute www.google.com 
 
 comando: dig www.alias.com  +short - ele traz o IP do endereço; 
 comando: whois - para saber sobre determinado host;
 Ex: whois www.alias.com
 
-comando: finger - mostra todas as informações do usuário que está logado no host;
+comando: finger - Exibe informações do usuário que está logado no host;
 
 
