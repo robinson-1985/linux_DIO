@@ -1,0 +1,99 @@
+- Comandos gzip, zip e bzip2
+
+Compactadores: são programas que diminuem o tamanho de um arquivo ou diretório.
+
+Extensões: elas identificam o tipo de um arquivo e o programa necessário para 
+manipular o arquivo, dezenas de extensões identificam arquivos compactados, 
+quando um arquivo é compactado, uma extensão é adicionada ao nome do arquivo. 
+
+Ex: se um arquivo é compactado pelo programa rar, o mesmo receberá a extensão .rar
+
+Ao descompactar a extensão é removida do arquivo.
+
+                          COMPACTADORES
+
+gzip - compactador muito usado, possui uma taxa excelente de compactação.
+Uso: gzip + nomearquivo.
+
+gzip -9 arquivo.txt - usa a taxa de compactação máxima do gzip.
+
+zip 
+
+Uso: zip arquivo.zip arquivo.txt
+
+bzip2
+
+Uso: bzip2 arquivo
+
+rar - necessita ser instalado na primeira utilização.
+
+Uso: rar a arquivo.rar arquivo
+
+                          DESCOMPACTADORES
+
+gzip 
+
+Uso: gunzip arquivo.txt.gz (todo arquivo que for compactado recebe gz).
+
+zip 
+
+Uso: unzip arquivo.zip 
+Para excluir definitavemte é só digitar o comando rm -arquivo.zip
+
+bzip2
+
+Uso: bzip2 -d arquivo.bz2
+
+rar
+
+Uso: rar x arquivo.rar
+
+                        ARQUIVADORES
+
+Um arquivador junta vários arquivos em um só, mas pode ser usado em conjunto com 
+um compactador para armazenar arquivos compactados.
+
+tar - o tar é um arquivo muito utilizado no Linux até mesmo em arquivos de sistema.
+
+Uso: tar -cf arquivo.tar arquivo.txt
+
+COMPACTADOR - esse tipo de arquivo é só usar o comando gzip arquivo.tar
+
+DESCOMPACTADORES -
+
+utiliza-se os comandos tar -xvf arquivo.txt.tar.gz
+Agora se quisermos extrair para outro diretório utiliza-se a opção abaixo:
+tar -xvf arquivo.tar.gz -C ~/Documentos
+
+Para gunzip:
+
+gunzip arquivo.tar.gz
+
+Para Zip:
+
+zip arquivo.tar.zip arquivo.tar
+
+Para rar
+
+rar a aquivo.tar.rar arquivo.tar
+
+Para bzip2
+
+bzip2 arquivo.tar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

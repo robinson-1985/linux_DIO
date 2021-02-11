@@ -36,6 +36,109 @@ Altere a senha e pronto já terá uma nova senha.
 
 - Como exibir informações de login e remover um usuário
 
+para exibir a informação dos usuários fazemos assim: 
+
+comando: lastlog - exibe informações de Login dos usuários;
+
+comando: last - exibe uma listagem de entrada e saída do usuário no sistema;
+
+comando: su + <nomedousuario> - exibirá o nome do usuário que deseja; 
+para mudar para a minha pasta root é só digitar c ~
+
+comando: logname - exibe o nome do usuário atual no sistema;
+
+comando: id - exibe todos os identificadores do usuário; (mostra também os grupos 
+que esse usuário pertence)
+
+comando: cat /etc/passwd - exibe todos os usuários;
+
+comando: cat /etc/passwd | more - exibe todos os usuários e a quantidade de linhas;
+
+comando: userdel <nomedousuario> - Remove o usuário;
+
+comando: userdel -r <nomedousuario> - Remove o usuário e sua pasta pessoal;
+
+- Como criar um grupo e gerenciar os usuários
+
+Grupos: os grupos permitem organizar os usuários e definir as permissões de acesso
+a arquivos e diretórios de forma mais fácil.
+
+Controle de grupos 
+comando: cat /etc/group - exibir todos os grupos do sistema;
+
+comando: groups - Exibir todos os grupos de um usuário;
+
+comando: addgroup - criar um grupo 
+Exemplo: addgroup ubuntu ====  para criar esse grupo é necessário o sudo addgroup <alias>
+
+comando: adduser usuario grupo - adicionar um usuário a um grupo;
+exemplo: sudo adduser <alias> <alias> 
+
+comando: adduser usuario grupo - adicionar um usuário a um grupo;
+
+comando: gpasswd -a usuário grupo - adiciona um usuário a um grupo;
+
+comando: sudo su - troca para o usuário root;
+
+comando: su usuario - troca para outro usuário;
+
+comando: gpasswd -d - remover um usuário de um grupo;
+
+comando: groupdel grupo - remove um grupo; 
+
+comando: cat /etc/group | grep <palavra> - procura a palavra ou grupo com esse nome;
+
+- Como gerenciar permissões em diretórios e o que é o modo octal.
+
+Permissões: permisssões em arquivos e diretórios servem para restringir acessos como: 
+leitura, escrita e execução, Onde
+
+comando: r - read (leitura);
+comando: w - write (escrita);
+comando: x eXecution (execução). 
+
+comando: ls -lh - Exibe detalhes na listagem de um diretório como permissões;
+
+Atenção!!!!
+
+Para saber se é um arquivo ou diretório pelo ls -lh é só ver se começa com 
+d (diretório), ou - (arquivo). Assim, se diferencia um do outro.
+
+comando: chmod - Permite a modificação de permissões de um arquivo ou diretório;
+
+Modo octal:
+
+A máscara octal é composta por números sob a base 8 ou seja de 0 a 7 onde:
+O primeiro dígito representa o dono do ficheiro/diretório (u);
+O segundo dígito representa o grupo (g);
+O terceiro dígito representa os outros (os)
+
+As permissões são especificadas para cada grupo. 
+
+comando: chmod <numerooctal> alias.txt - vai dar permissão para outro usuário 
+alterar aquele texto ou arquivo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
