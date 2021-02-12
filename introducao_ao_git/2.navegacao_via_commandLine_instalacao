@@ -1,0 +1,15 @@
+            COMANDOS BÁSICOS PARA UM BOM DESEMPENHO NO TERMINAL
+
+A forma de interação com o GIT é por linha de comando. (CLI)
+
+Existem diferenças entre os comandos Windows e Unix:
+
+Windows                           Unix
+-cd                              -cd
+-dir                             -ls
+-mkdir                           -mkdir
+-del/rmdir                       -rm -rf
+
+        Ressaltando as principais diferenças entre os sistemas operacionais
+
+
