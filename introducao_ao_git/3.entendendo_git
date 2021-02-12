@@ -1,0 +1,89 @@
+        ENTENDENDO COMO O GIT FUNCIONA POR BAIXO DOS PANOS.
+
+                        SHA1 
+
+A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um 
+conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança 
+Nacional dos EUA)
+
+A encriptação gera conjunto de caracteres identificador de 40 dígitos. É uma forma 
+curta de representar um arquivo.
+
+
+                     OBJETOS FUNDAMENTAIS (Objetos internos do Git)
+
+Funções inerentes: BLOB - O blob (Binary Large Object - grande objeto binário) é um 
+campo criado para o armazenamento de qualquer tipo de informações em formato binário, 
+dentro de uma tabela de um banco de dados (contém metadados).
+Exemplo: 
+
+Vamos em primeiro lugar utilizar o git:
+
+echo 'conteudo' | git hash -object --stdin
+Vai aparecer aqui os 40 caracteres da encriptação.
+
+Agora usando o blob, vai aparecer o mesmo arquivo do sha1.
+echo -e 'blob 9\0conteudo' | openss1 sha1
+
+TREE - as trees armazenam os blobs. Contem também metadados, e guarda também o nome 
+do arquivo. Ela é responsável por montar toda a estrutura onde estão guardados os 
+arquivos. Uma árvore pode apontar para outra árvore. As árvores também tem o sha1 
+encriptado dos metadados da árvore. Se mudar alguma coisa em qualquer arquivo, 
+ocorrerá a mudança no sha1 da árvore. 
+
+                           blob<--- tree ---->tree --> blob
+                                     
+COMMIT - Commit é um processo simples que adiciona as alterações para o histórico do 
+repositório e atribui um nome ao commit. Um ponto importante é que o Git não versiona 
+diretórios. Todo diretório deve possuir pelo menos um arquivo que será então versionado. 
+O git permite que os desenvolvedores criem arquivos que não sejam versionados, ou seja, 
+eles serão ignorados pelo repositório. Para isto basta criar um arquivo com um ponto no 
+inicio do nome como, por exemplo, ".nomearquivo". Todos arquivos que começam com um ponto 
+são ignorados pelo sistema de arquivos. Neste caso, a alteração não é enviada para o 
+repositório central.
+
+Em suma, o Commit é o objeto que vai ajuntar todas as informações e dar sentido ao 
+que está sendo feito. Ele aponta para um parente (que é o último commit realizado 
+antes dele), ele aponta para o autor e mensagem. O commit tem um time que é tempo que 
+foi criado.
+
+Os commits possuem também encriptação (sha1), e se houver alteração por sua vez será
+alterado os metadados da árvore que está sendo apontado para ele, assim sucessivamente 
+vai refletindo no seu commit. 
+
+                    SISTEMA DISTRIBUÍDO/ SEGURANÇA
+
+Por que o git é um sistema distribuído e seguro?
+
+O sistema de controle de versão moderno mais usado no mundo hoje é o Git. O Git 
+é um projeto de código aberto maduro e com manutenção ativa desenvolvido em 2005 
+por Linus Torvalds, o famoso criador do kernel do sistema operacional Linux. Um 
+número impressionante de projetos de software depende do Git para controle de 
+versão, incluindo projetos comerciais e de código-fonte aberto. Os desenvolvedores 
+que trabalharam com o Git estão bem representados no pool de talentos de 
+desenvolvimento de software disponíveis e funcionam bem em uma ampla variedade de 
+sistemas operacionais e IDEs (Ambientes de Desenvolvimento Integrado).
+
+Tendo uma arquitetura distribuída, o Git é um exemplo de DVCS (portanto, Sistema 
+de Controle de Versão Distribuído). Em vez de ter apenas um único local para o 
+histórico completo da versão do software, como é comum em sistemas de controle 
+de versão outrora populares como CVS ou Subversion (também conhecido como SVN), 
+no Git, a cópia de trabalho de todo desenvolvedor do código também é um repositório 
+que pode conter o histórico completo de todas as alterações. Além de ser distribuído, 
+o Git foi projetado com desempenho, segurança e flexibilidade em mente.
+
+Git foi projetado com a integridade do código-fonte gerenciado como uma prioridade. 
+O conteúdo dos arquivos, bem como os verdadeiros relacionamentos entre arquivos e 
+diretórios, versões, tags e commits, todos esses objetos no repositório do Git são
+protegidos com um algoritmo de hash de criptografia seguro chamado SHA1. Isso protege
+o código e o histórico de alterações contra alterações acidentais e maliciosas e 
+garante que o histórico tenha rastreabilidade total. Com o Git, você pode ter certeza 
+de ter um histórico de conteúdo autêntico do código-fonte.
+
+
+
+
+
+
+
+                       
