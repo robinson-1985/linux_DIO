@@ -1,0 +1,136 @@
+                    Professor - Daviny Vidal
+
+                    SHELL SCRIPT - MANIPULANDO ARQUIVOS.
+                    
+                        O QUE É SHELL SCRIPT?
+
+Shell em computação é uma interface de usuário para acessar os serviços de 
+um sistema operacional.
+
+Script é uma linguagem de programação que executa no sistema em tempo de execução,
+muito utilizado para automação.
+
+                        (cd) - MUDAR DIRETÓRIO 
+
+COMANDO:  cd - é um acrônimo da expressão inglesa change directory;
+
+Exemplo: cd / - abre o diretório raiz do sistema;
+
+cd~ - Abre o diretório do usuário corrente. O usuário logado naquele instante;
+
+cd .. - voltar o diretório;
+
+cd . - representa o diretório atual.
+
+                    (ls, ls -l, ls -a, ls -s) LISTANDO ARQUIVOS
+
+COMANDO: ls - lista o conteúdo 
+
+ls -l - lista conteúdo em coluna detalhada;
+
+ls -a ou ls -la- lista o conteúdo até os arquivos ocultos;
+
+ls -s - Lista o conteúdo com tamanho alocado de cada arquivo, em bloco.
+
+ATENÇÂO: se quiser saber mais comandos ls coloque man ls no terminal.
+
+                    CRIAR E ATUALIZAR O CONTEÚDO (touch)
+
+COMANDO: touch - usado para criar arquivos vazios ou alterar data e hora do arquivo.
+
+Exemplos:  
+
+Criar múltiplos arquivos - touch arquivo1.txt arquivo2.txt arquivo3.txt
+
+Alterar hora de acesso - touch -a arquivo_nome.txt
+
+Alterar hora da modificação - touch -m arquivo_nome1.txt
+
+Alterar hora de acesso sem criar um novo arquivo - touch -c arquivo_nome.txt
+
+Definir hora específica de acesso e modificação - touch 2021202 1200.30 arquivo.txt
+(formato CCYYMMDDhhmm.ss)
+CC - os dois primeiros dígitos do ano;
+YY - os dois dígitos subsequentes do ano;
+MM - O mês;
+DD - o dia;
+hh - A hora;
+mm - O minuto;
+ss - O segundo;
+
+                        VISUALIZAR CONTEÚDO DO ARQUIVO (cat)
+
+COMANDO: cat - concatenate (concatenar)
+
+Esse comando pode - Criar arquivos;
+                    Unir Arquivos;
+                    Exibir arquivos.
+
+Podemos colocar o resultado em um outro arquivo
+
+Exemplo: 
+cat arq1 > arq_final
+*redirecionador de saída >
+
+Para parar a rolagem da tela e permitir a navegação use o pipe |
+
+More ou less
+
+            SHELL SCRIPT - MANIPULANDO ARQUIVOS - PARTE 2
+
+                        MOVER ARQUIVOS (mv)
+
+COMANDO: mv -move arquivos e diretórios e renomeia arquivos e diretórios;
+
+Usando o comando mv
+
+-i: Confime antes de substituir;
+-n: Sem substituição;
+-b: Substituindo pelo backup;
+-u: Substitua se o arquivo de destino for antigo ou não existir.
+
+                        COPIAR ARQUIVOS (cp)
+
+COMANDO: cp - Permite copiar arquivos ou diretórios para outro local.
+
+- Sem confirmação de existência ou não, exceto se usar a flag -i (interativa);
+
+-Nenhuma saída será exibida, exceto se usar o flag -v (verbose)
+
+                        CRIANDO DIRETÓRIOS (mkdir)
+
+COMANDO: mkdir - cria diretório;
+
+                        REMOVER ARQUIVOS (rm)
+
+COMANDO: rm - remove arquivo;
+            -f - remove os arquivos sem perguntar;
+
+                        PROCURAR POR ARQUIVOS (find)
+
+COMANDO: find - procurar arquivos;
+
+Se colocar find . pesquisará tudo relacionado aquela pasta. 
+
+find ./ -type f -name "s" (arquivos)
+find ./ -type d -name "meu" (diretórios)
+
+                    COMPARAR DIFERENÇA ENTRE ARQUIVOS (diff)
+
+COMANDO: diff - faz comparação entre arquivos e diretórios.
+
+                    REMOVER DIRETÓRIO (rmdir) (rm -rf)
+
+COMANDO: rmdir - remover diretório vazio;
+         
+         rm -rf - remover diretório com arquivos.
+
+                    TRABALHANDO COM VARIÁVEIS (env)
+
+COMANDO: env - variáveis de ambiente
+
+PS1 : Prompt da linha de comando;
+HOME: Dire "/home" de um usuário;
+PATH : Lista de diretórios vasculhados quando um comando é executado.
+
+
