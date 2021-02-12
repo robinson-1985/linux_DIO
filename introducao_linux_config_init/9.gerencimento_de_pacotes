@@ -19,6 +19,8 @@ apt - sudo apt install pacote;
 
 para instalar as atualizações do pacote - sudo apt upgrade install pacote;
 
+dpkg -i - instala um pacote deb
+
                     REMOÇÃO
 
 apt - sudo apt remove pacote;
@@ -32,17 +34,69 @@ comando: sudo dpkg -i
 
                     DESCRIÇÃO DO PACOTE 
 
-dpkg
+dpkg - gerenciador de pacote do tipo debian (informação do pacote deb);
 
 Uso: sudo dpkg -I pacote.deb
 
                     REMOÇÃO DO PACOTE DEB 
 
-dpkg
+dpkg -r - remove pacote debian
 
 Uso: sudo dpkg -r nomedopacote
 
                     INTRODUÇÃO AO FEDORA 
 
 - Comandos rpm e yum.
+
+                    INSTALAÇÃO DOS PACOTES rpm PELO rpm
+
+rpm - gerenciador do pacote 
+
+rpm -ivh - instala um pacote rpm;
+
+Uso: rpm -ivh pacote.rpm
+
+Resolvendo dependências no Fedora - sudo rpm -ivh --nodeps + pacote a ser instalado;
+
+                        ATUALIZAÇÃO
+
+rpm -U - atualiza um pacote rpm;
+
+Uso: rpm -U pacote.rpm
+
+Resolvendo: sudo rpm -ivh --nodeps + pacote a ser instalado
+
+                        REMOÇÃO DE PACOTES rpm
+
+rpm -e - Remove um pacote rpm;
+
+Uso: rpm -e pacote.rpm
+Resolvendo: sudo -e pacote a ser desinstalado
+
+                         INSTALAÇÃO DOS PACOTES rpm PELO yum
+
+yum - gerenciador do pacote rpm;
+
+yum install - instala um pacote rpm;
+
+Uso: yum install pacote
+Resolvendo: sudo yum install pacote a ser instalado
+
+                                ATUALIZAÇÃO
+
+yum update - atualiza um pacote rpm;
+
+Uso: yum update pacote
+Resolvendo: sudo yum update pacote
+
+                             REMOÇÃO DE PACOTES rpm UTILIZANDO yum
+
+yum remove - remove um pacote rpm;
+
+Uso: yum remove pacote
+Resolvendo: sudo yun remove pacote
+
+
+
+
 
