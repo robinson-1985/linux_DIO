@@ -1,0 +1,23 @@
+                COMO OS CONFLITOS ACONTECEM NO GITHUB E COMO RESOLVÊ-LOS
+
+                        RESOLVENDO CONFLITOS
+
+A versão que consta na sua máquina é a mesma do seu repositório virtual. 
+Se uma pessoa dar um git clone, o diretório foi clonado e os dois estão iguais. 
+Porém, se uma das pessoas fizer qualquer alteração no código, então os códigos não
+serão semelhantes e ficará desatualizado. 
+
+Então, se vocẽ for puxar o código vai ter que pegar a versão que mudou e tentar comitar
+de forma manual. Porque se não dará um erro chamado merge, onde os arquivos se conflitam
+por serem de bases iguais, porém, com dados diferentes.
+
+Esse tipo de erro tem que ser corrigido de forma manual utilizando o git merge.
+
+Quando ocorrer isto, então abre o arquivo e verifica qual a versão que ficará. 
+
+Depois dê um git add .
+
+Um git commit -m "resolve conflitos"
+
+Por fim, é preciso empurrar a versão atual para o github com o comando git push.
+

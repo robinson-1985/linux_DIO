@@ -32,3 +32,23 @@ esses arquivos voltam a ser unmodified porque ficam aguardando modificações.
 
 Comando que mostra como está o status do arquivo. Ex: untracked, modified, 
 unmodified, etc.
+
+                        GIT HUB 
+
+Criamos o nosso gitHub, agora é necessário fazer um novo repositório.
+Criado esse novo repositório, vamos para o terminal e utilizamos o comando abaixo
+
+git remote add origin  git@github.com:robinson-1985/livro-receitas.git (esse endereço 
+é um exemplo)
+
+Após, verificar que ocorreu tudo certo digite o comando git remote -v que listará 
+todas as listas de repositórios que estão cadastrados. 
+
+O origin é uma convenção, ou seja, um alias.
+
+Nesse momento, é só digitar o comando git push origin master ou git push (vai depender
+do programa). Dando tudo certo, o arquivo foi enviado para o repositório remoto.
+
+
+
+
