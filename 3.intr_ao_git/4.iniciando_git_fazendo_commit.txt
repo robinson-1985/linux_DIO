@@ -1,0 +1,12 @@
+            PRIMEIROS COMANDOS COM GIT
+
+git init - para começar o repositório no git;
+
+git add - para mover arquivos e dar início aos primeiros comandos;
+
+git commit - para comitar;
+
+            CRIANDO UM REPOSITÓRIO
+
+Aprendemos nesse capítulo a utilizar o commit -m " " para comitar arquivos, e 
+trabalhamos com markdown utilizando o editor de texto Typora. 

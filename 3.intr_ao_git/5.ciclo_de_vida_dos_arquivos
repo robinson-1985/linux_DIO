@@ -1,0 +1,34 @@
+                        GIT INIT
+
+Esse conceito inicia um comando criando um repositório.
+
+File unmodified - arquivo que não foi modificado;
+
+File modified - arquivo que foi modificado;
+
+Staged - é o local onde os arquivos estão sendo preparados para fazer algum tipo de 
+agrupamento;
+
+                        GIT ADD 
+
+Quando utilizamos o comando git add puxamos um arquivo untracked para o staged. 
+
+                        GIT COMMIT 
+
+Quando colocamos os arquivos staged e envelopamos para enviar as modificações, 
+e colocamos uma mensagem com metadados aí ele vira um commit. Nisso, o commit 
+faz um snapshot (como se fosse uma foto das alterações do arquivo). Assim, 
+esses arquivos voltam a ser unmodified porque ficam aguardando modificações.
+
+                    VAMOS ENTENDER MAIS UM POUCO: 
+
+                    Servidor - Remote repository;
+
+                    AMBIENTE DE DESENVOLVIMENTO:
+
+      WORKING DIRECTORY / STAGING AREA / LOCAL REPOSITORY
+
+                        GIT STATUS
+
+Comando que mostra como está o status do arquivo. Ex: untracked, modified, 
+unmodified, etc.
